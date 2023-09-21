@@ -10,10 +10,13 @@ A continuació vegem l'estructura generada del projecte, en dues vistes diferent
 En la imatge de l'esquerra podem observar l'estructura del projecte creat amb Gradle i tots els fitxers generats de la aplicació, amb els directori arrel, la carpeta de app, i els fitxers més importants que ara nomenarem. Amb la imatge de la dreta, la vista de tots els directoris i fitxers és més compacta.
 
 ### Elements importants:
-Els scripts de Gradle tant el general, situat en el arrel (build.gradle.kts), com el propi de la APP (app/build.gradle.kts). Des de la vista android aquests 2 scripts estan dins de Gradle Scripts, on indica si és el pròpi del projecte o del mòdul
+* Els scripts de Gradle tant el general, situat en el arrel (build.gradle.kts), com el propi de la APP (app/build.gradle.kts). Des de la vista android aquests 2 scripts estan dins de Gradle Scripts, on indica si és el pròpi del projecte o del mòdul.
 
-        
+<img src="images/script.png" width="200" height="200">
 
+* En la vista Project Files, dins de la carpeta app/src/main, trobem el codí font de la aplicació. A la vista Android el codi font es troba en la carpeta java.
+* 
+<img src="images/script.png" width="200" height="200"> <img src="images/script.png" width="200" height="200">
 
 ## 2. Análisi del clicle de vida i el problema de la pèrdua d’estat
 ## 3. Solució a la pèrdua d’estat
