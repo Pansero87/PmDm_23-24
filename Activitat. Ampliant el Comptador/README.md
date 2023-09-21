@@ -4,8 +4,14 @@
 Projecte creat en Android Studio, el qual utilitza Gradle com a ferramenta de la construcció d'aquest i Kotlin com a llenguatge de programació.
 
 A continuació vegem l'estructura generada del projecte, en dues vistes diferents, vista Android i vista dels fitxers del projecte (Project Files).
-### * Imatge de esquerra vista Project Files.  * Imatge dreta Vista Android amb l'estructura del projecte. 
-<img src="images/VistaProject.png" width="300" height="300">    <img src="images/VistaAndroid.png" width="300" height="300">   
+### * Imatge de esquerra vista Project Files.  * Imatge dreta Vista Android 
+<img src="images/VistaProject.png" width="300" height="300">    <img src="images/VistaAndroid.png" width="300" height="300">
+
+En la imatge de l'esquerra podem observar l'estructura del projecte creat amb Gradle i tots els fitxers generats de la aplicació, amb els directori arrel, la carpeta de app, i els fitxers més importants que ara nomenarem. Amb la imatge de la dreta, la vista de tots els directoris i fitxers és més compacta.
+
+### Elements importants:
+Els scripts de Gradle tant el general, situat en el arrel (build.gradle.kts), com el propi de la APP (app/build.gradle.kts). Des de la vista android aquests 2 scripts estan dins de Gradle Scripts, on indica si és el pròpi del projecte o del mòdul
+
         
 
 
