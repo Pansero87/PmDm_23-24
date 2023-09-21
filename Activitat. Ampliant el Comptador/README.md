@@ -26,7 +26,15 @@ En la imatge de l'esquerra podem observar l'estructura del projecte creat amb Gr
 
   <img src="images/manP.png" width="250" height="200"> <img src="images/manA.png" width="250" height="200">
 
-## Analitza l’estructura d’una Activitat i quins fitxers estan implicats. Intenta respondre a la següent pregunta: “Si volguera afegir una nova activitat, sería suficient crear el fitxer de layout i el fitxer Kotlin amb la classe?”
+## Analitza l’estructura d’una Activitat i quins fitxers estan implicats. 
+Aquests són els fitxers d'una activitat:
+* La classe de l'activitat i els seus mètodes importants al fitxer MainActivity.kt, aquesta classe normalment hererta de AppCompatActivity (class MainActivity : AppCompatActivity() {). En aquest part és on s'implementa la lògica de l'activitat.
+
+* Els recursos de Layout, on cada activitat té associat un disseny i es defineix a un fitxer XML. Aquest fitxer es troba a la carpeta res/layout (activity_main.xml)
+
+* AndroidManifest.xml, en aquest fitxer, conté les declaracions de les activitats e informació importatn de la aplicació.
+  
+## Intenta respondre a la següent pregunta: “Si volguera afegir una nova activitat, sería suficient crear el fitxer de layout i el fitxer Kotlin amb la classe?”
 A la següent pregunta, no seria suficient ja que s'ha d'implementar la activitat al fitxer més important, que és el AndoidManifest.xml.
   
 ## 2. Análisi del clicle de vida i el problema de la pèrdua d’estat
