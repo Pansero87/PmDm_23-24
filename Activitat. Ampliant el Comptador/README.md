@@ -14,10 +14,11 @@ En la imatge de l'esquerra podem observar l'estructura del projecte creat amb Gr
 
 <img src="images/script.png" width="200" height="200">
 
-* En la vista Project Files, dins de la carpeta app/src/main, trobem el codí font de la aplicació. A la vista Android el codi font es troba en la carpeta java.
-* 
-<img src="images/script.png" width="200" height="200"> <img src="images/script.png" width="200" height="200">
+* En la vista Project Files, dins de la carpeta app/src/main, trobem el codí font de la aplicació. A la vista Android el codi font es troba en la carpeta java. En la vista Android trobem la carpeta de recursos dins de app/res i s'observa de forma més compacta.
+  
+<img src="images/CodiP.png" width="250" height="200"> <img src="images/codiA.png" width="250" height="200">
 
+* La carpeta app/src/res conté els recursos de la Aplicació, ja siguen, imatges, dissenys etc. Aquesta carpeta està desglosada en diferents subcarpetes, per a gestionar els diferents tipus de recursos.
 ## 2. Análisi del clicle de vida i el problema de la pèrdua d’estat
 ## 3. Solució a la pèrdua d’estat
 ## 4. Ampliant la funcionalitat amb decrements i Reset
