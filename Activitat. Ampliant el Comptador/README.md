@@ -25,8 +25,13 @@ En la imatge de l'esquerra podem observar l'estructura del projecte creat amb Gr
 * Finalment un dels fitxer més importants del projecte (app/AndroidManifest.xml), ja que aquest defineix els aspectes generals de la aplicació.
 
   <img src="images/manP.png" width="250" height="200"> <img src="images/manA.png" width="250" height="200">
+
+## Analitza l’estructura d’una Activitat i quins fitxers estan implicats. Intenta respondre a la següent pregunta: “Si volguera afegir una nova activitat, sería suficient crear el fitxer de layout i el fitxer Kotlin amb la classe?”
+A la següent pregunta, no seria suficient ja que s'ha d'implementar la activitat al fitxer més important, que és el AndoidManifest.xml.
   
 ## 2. Análisi del clicle de vida i el problema de la pèrdua d’estat
+
+
 ## 3. Solució a la pèrdua d’estat
 ## 4. Ampliant la funcionalitat amb decrements i Reset
 ## 5. Canvis per implementar el View Binding
