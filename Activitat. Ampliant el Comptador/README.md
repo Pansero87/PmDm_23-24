@@ -1,4 +1,4 @@
-# Ampliant el Comptador
+# Ampliant el Comptador . Sergio Martínez Bataller
 
 ## 1. Anàlisi de l’estructura del projecte
 Projecte creat en Android Studio, el qual utilitza Gradle com a ferramenta de la construcció d'aquest i Kotlin com a llenguatge de programació.
