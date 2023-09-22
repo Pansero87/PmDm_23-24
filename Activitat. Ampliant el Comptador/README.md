@@ -46,7 +46,7 @@ A la següent pregunta, no seria suficient ja que s'ha d'implementar la activita
 
   <img src="images/logs.png" width="300" height="300">
 
-* El problema de la perdua d'estat, al haber algún canvi d'activitat, com per exemple girar la pantalla.
+* El problema de la perdua d'estat, és, que al haber algún canvi d'activitat com per exemple girar la pantalla, no guarda la activitat del moment. En aquesta cas, és el valor del comptador.
 
 ## 3. Solució a la pèrdua d’estat
 
