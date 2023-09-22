@@ -38,8 +38,15 @@ Aquests són els fitxers d'una activitat:
 A la següent pregunta, no seria suficient ja que s'ha d'implementar la activitat al fitxer més important, que és el AndoidManifest.xml.
   
 ## 2. Análisi del clicle de vida i el problema de la pèrdua d’estat
+* Per a analitzar el cicle de vida, he utilitzat els següents mètodes de la classe Activity:
+ 
+ <img src="images/cicle.png" width="300" height="300">
 
- El problema de la perdua d'estat, al haber algún canvi d'activitat, com per exemple girar la pantalla.
+* Aquests són els resultats al interactuar amb la aplicació.
+
+  <img src="images/logs.png" width="300" height="300">
+
+* El problema de la perdua d'estat, al haber algún canvi d'activitat, com per exemple girar la pantalla.
 
 ## 3. Solució a la pèrdua d’estat
 
