@@ -39,7 +39,18 @@ A la següent pregunta, no seria suficient ja que s'ha d'implementar la activita
   
 ## 2. Análisi del clicle de vida i el problema de la pèrdua d’estat
 
+ El problema de la perdua d'estat, al haber algún canvi d'activitat, com per exemple girar la pantalla.
 
 ## 3. Solució a la pèrdua d’estat
+
+Per solucionar la pèrdua d'estat, em fet ús de 2 mètodes de la classe Activity, onSaveInstanceState(estat: Bundle) i
+onRestoreInstanceState(estat: Bundle) En el primer mètode guardem el estat del comptador, quan es detè o hi ha algún canvi d'activitat.
+
+ <img src="images/manP.png" width="250" height="200">
+
+ En el segón mètode, restaurem el estat de l'activitat després d'algún canvi de configuració. Guardem el estat en la variable comptador i finalment s'actualitza el text amb al valor del comptador convertit a cadena
+
+  <img src="images/manP.png" width="250" height="200">
+
 ## 4. Ampliant la funcionalitat amb decrements i Reset
 ## 5. Canvis per implementar el View Binding
