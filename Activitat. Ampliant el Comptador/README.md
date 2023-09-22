@@ -67,7 +67,7 @@ Per ampliar la funcionalitat amb decrements i reset. Primerament em afegit 2 rec
 
 Després el MainActivity.kt, hem aplicat la lògica que correspon als botons per a que interactuen de manera adequada. 
 
-<img src="images/logica.png" width="300" height="300">    <img src="images/phone.png" width="300" height="400">
+<img src="images/logica.png" width="300" height="300">    <img src="images/phone.png" width="250" height="400">
 
 
 
