@@ -44,7 +44,7 @@ A la següent pregunta, no seria suficient ja que s'ha d'implementar la activita
 
 * Aquests són els resultats al interactuar amb la aplicació.
 
-  <img src="images/logs.png" width="300" height="300">
+<img src="images/logs.png" width="300" height="300">
 
 * El problema de la perdua d'estat, és, que al haber algún canvi d'activitat com per exemple girar la pantalla, no guarda la activitat del moment. En aquesta cas, és el valor del comptador.
 
@@ -57,7 +57,14 @@ onRestoreInstanceState(estat: Bundle) En el primer mètode guardem el estat del 
 
  En el segón mètode, restaurem el estat de l'activitat després d'algún canvi de configuració. Guardem el estat en la variable comptador i finalment s'actualitza el text amb al valor del comptador convertit a cadena
 
-  <img src="images/onres.png" width="300" height="300">
+<img src="images/onres.png" width="300" height="300">
 
 ## 4. Ampliant la funcionalitat amb decrements i Reset
+
+Per ampliar la funcionalitat amb decrements i reset. Primerament em afegit 2 recursos més al fitxer activity_main.xml, en aquest càs 2 botons, el de restar i el de resetejar el comptador.
+
+
+
+Despŕes el MainActivity.kt, hem aplicat la lògica que correspon als botons per a que interactuen de manera adequada.
+
 ## 5. Canvis per implementar el View Binding
