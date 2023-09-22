@@ -80,6 +80,8 @@ Després el MainActivity.kt, hem aplicat la lògica que correspon als botons per
             viewBinding = true
         }
 
+Aquesta funcionalitat ens facilitarà la vinvulació als arxius XML generant classes, és mé eficient i més segur que utilitzar 'findViewID'
+
 * Al MainActivity.kt ho hem importat:
 
   import com.ieseljust.pmdm.comptador.databinding.ActivityMainBinding
