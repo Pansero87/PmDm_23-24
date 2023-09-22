@@ -72,3 +72,33 @@ Després el MainActivity.kt, hem aplicat la lògica que correspon als botons per
 
 
 ## 5. Canvis per implementar el View Binding
+
+* Primerament al script de Gradle del mòdul (build.gradle.kts (Module:app)), em habilitat el ús de View Binding al projecte afegint aquest còdi:
+
+        // Afegim la funcionalitat viewBinding
+        buildFeatures {
+            viewBinding = true
+        }
+
+* Al MainActivity.kt ho hem importat:
+
+  import com.ieseljust.pmdm.comptador.databinding.ActivityMainBinding
+
+* Després hem utilitzat la variable Binding per a vincular les vistes del disseny XML:
+
+   lateinit var  binding: ActivityMainBinding
+
+* FInalment:
+  
+      binding = ActivityMainBinding.inflate(layoutInflater)
+
+       // setContentView(R.layout.activity_main)
+        setContentView(binding.root)
+
+        // Referencia al TextView
+        val textViewComptador=findViewById<TextView>(R.id.textViewComptador)
+
+        binding.textViewComptador.setText(comptador.toString())
+
+
+  Resumint, el còdi utilitza View BInding per a vincular la interfície al MainActivity.
