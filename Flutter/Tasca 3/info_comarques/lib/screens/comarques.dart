@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:info_comarques/data/peticions_http.dart';
+import 'package:info_comarques/screens/infocomarca.dart';
 
 class ComarquesScreen extends StatelessWidget {
   final String provincia;
@@ -28,29 +29,41 @@ class ComarquesScreen extends StatelessWidget {
                     var comarca = comarques[index];
                     return Padding(
                       padding: const EdgeInsets.all(10.0),
-                      child: Card(
-                        child: Container(
-                          width: double.infinity,
-                          height: 150,
-                          decoration: BoxDecoration(
-                            image: DecorationImage(
-                              image: NetworkImage(comarca['img']),
-                              fit: BoxFit.cover,
+                      child: GestureDetector(
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => InfoComarques(
+                                comarca: comarca['comarca'],
+                              ),
                             ),
-                          ),
-                          child: Column(
-                            mainAxisAlignment: MainAxisAlignment.end,
-                            children: [
-                              ListTile(
-                                title: Text(
-                                  comarca['comarca'],
-                                  style: const TextStyle(
-                                    fontSize: 25,
-                                    color: Colors.white,
+                          );
+                        },
+                        child: Card(
+                          child: Container(
+                            width: double.infinity,
+                            height: 150,
+                            decoration: BoxDecoration(
+                              image: DecorationImage(
+                                image: NetworkImage(comarca['img']),
+                                fit: BoxFit.cover,
+                              ),
+                            ),
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.end,
+                              children: [
+                                ListTile(
+                                  title: Text(
+                                    comarca['comarca'],
+                                    style: const TextStyle(
+                                      fontSize: 25,
+                                      color: Colors.white,
+                                    ),
                                   ),
                                 ),
-                              ),
-                            ],
+                              ],
+                            ),
                           ),
                         ),
                       ),
