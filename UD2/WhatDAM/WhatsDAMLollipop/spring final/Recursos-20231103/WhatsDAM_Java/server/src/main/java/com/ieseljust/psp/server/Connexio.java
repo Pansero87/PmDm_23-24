@@ -2,8 +2,6 @@ package com.ieseljust.psp.server;
 
 import java.net.Socket;
 
-import org.json.JSONObject;
-
 public class Connexio {
 
     // Aquesta classe modela les connexions

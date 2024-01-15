@@ -1,0 +1,14 @@
+name: tasca2
+description: A simple command-line application.
+version: 1.0.0
+# repository: https://github.com/my_org/my_repo
+environment:
+  sdk: ^3.2.0
+
+# Add regular dependencies here.
+dependencies:
+  http: ^1.1.2
+  pubspec_yaml: ^3.1.0
+
+dev_dependencies:
+  lints: ^3.0.0
