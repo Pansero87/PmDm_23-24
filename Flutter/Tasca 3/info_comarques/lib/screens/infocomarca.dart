@@ -1,6 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:info_comarques/data/peticions_http.dart';
 
+// Aquest widget mostra la informació d'una comarca específica.
+//
+// Aquest widget és utilitzat per a mostrar la informació detallada d'una comarca,
+// incloent la seva imatge, nom, capital i descripció.
+//
+// Requereix el paràmetre [comarca] per a especificar la comarca de la qual es vol mostrar la informació.
+
 class InfoComarques extends StatelessWidget {
   final String comarca;
 
@@ -23,6 +30,8 @@ class InfoComarques extends StatelessWidget {
               title: const Text('Informació Comarques'),
             ),
             body: Container(
+              width: MediaQuery.of(context).size.width,
+              height: MediaQuery.of(context).size.height,
               decoration: const BoxDecoration(
                 image: DecorationImage(
                   image: AssetImage("assets/images/bg.webp"),
@@ -84,13 +93,14 @@ class InfoComarques extends StatelessWidget {
               ),
             ),
             bottomNavigationBar: BottomNavigationBar(
+              backgroundColor: Colors.indigo[200],
               items: const <BottomNavigationBarItem>[
                 BottomNavigationBarItem(
                   icon: Icon(Icons.info),
                   label: 'La comarca',
                 ),
                 BottomNavigationBarItem(
-                  icon: Icon(Icons.cloud),
+                  icon: Icon(Icons.sunny),
                   label: 'Informació i oratge',
                 ),
               ],
